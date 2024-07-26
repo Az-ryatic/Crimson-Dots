@@ -1,4 +1,4 @@
-> **Some bits are not fully riced ( mostly gtk-3.0 ), too lazy to do 'em so you could finish it if you want lol.** <br>
+> **Some bits are not fully riced ( mostly gtk ), too lazy to do 'em so you could finish it if you want lol.** <br>
 > **This rice is meant to be personal, I am not making it install-friendly but feel free to take anything.**
 
 # ☥ PREVIEW:

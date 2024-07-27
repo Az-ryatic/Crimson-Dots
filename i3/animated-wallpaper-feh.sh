@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # PATH OF THE FRAMES
-PATHFRAME=~/Videos/Crimson # define the path for retrieving your frames
+PATHFRAME=~/.config/i3/Crimson # define the path for retrieving your frames
 
 # FRAME FORMAT (OPTIONS: png/jpg)
 FORMAT=gif

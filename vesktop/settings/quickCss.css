@@ -1,0 +1,40 @@
+/**
+ * @name Crimson
+ * @description Allows you to customize Discord's native Color Scheme.
+ * @author DevilBro
+ * @version 1.0.0
+ * @authorId 278543574059057154
+ * @invite Jx3TjNS
+ * @donate https://www.paypal.me/MircoWittrien
+ * @patreon https://www.patreon.com/MircoWittrien
+ * @website https://mwittrien.github.io/
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor/
+ * @BDEditor DiscordRecolor
+*/
+
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+
+:root {
+  --accentcolor: 255,0,0;
+  --accentcolor2: 255,255,255;
+  --linkcolor: 86,86,86;
+  --mentioncolor: 255,17,0;
+  --textbrightest: 255,255,255;
+  --textbrighter: 222,222,222;
+  --textbright: 185,185,185;
+  --textdark: 140,140,140;
+  --textdarker: 115,115,115;
+  --textdarkest: 80,80,80;
+  --font: FF8;
+  --backgroundaccent: 0,0,0;
+  --backgroundprimary: 0,0,0;
+  --backgroundsecondary: 6,6,6;
+  --backgroundsecondaryalt: 0,0,0;
+  --backgroundtertiary: 0,0,0;
+  --backgroundfloating: 0,0,0;
+  --settingsicons: 1;
+  --HSL-server-icon-size: 45px;
+  --HSL-server-spacing: 10px;
+}
+
+/* Any custom CSS below here */

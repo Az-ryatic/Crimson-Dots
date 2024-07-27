@@ -1,0 +1,235 @@
+# Written by: Az_ryatic :)
+
+
+# -- INIT --
+
+
+# Modifier Key:
+set $mod Mod4
+
+# XDG Auto-Start:
+exec --no-startup-id dex --autostart --environment i3
+
+# Network Manager:
+exec --no-startup-id nm-applet
+
+# Float Mouse Mod:
+floating_modifier $mod
+
+# Mouse Drag Mod:
+tiling_drag modifier titlebar
+
+# -- UTILITY --
+
+
+# Launch Terminal:
+bindsym $mod+Return exec "kitty" 
+
+# Kill Window:
+bindsym $mod+Shift+q kill
+
+# Start Rofi:
+bindsym $mod+d exec --no-startup-id "rofi -show drun -display-drun 'If you can read this, input any name to launch!'"
+
+
+# -- WINDOWS --
+
+
+# Change Window Focus:
+
+bindsym $mod+h focus left
+bindsym $mod+Left focus left
+
+bindsym $mod+j focus down
+bindsym $mod+Down focus down
+
+bindsym $mod+k focus up
+bindsym $mod+Up focus up
+
+bindsym $mod+l focus right
+bindsym $mod+Right focus right
+
+# Move Focused Window: 
+
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+Left move left
+
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+Down move down
+
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+Up move up
+
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Right move right
+
+# Split Horizontally: 
+bindsym $mod+n split h
+
+# Split Vertically: 
+bindsym $mod+m split v
+
+# Toggle Fullscreen: 
+bindsym $mod+f fullscreen
+
+# Switch Container Layouts: 
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle Float: 
+bindsym $mod+Shift+space floating toggle
+
+# Switch Float Focus: 
+bindsym $mod+space focus mode_toggle
+
+# Focus Parent: 
+bindsym $mod+a focus parent
+
+# Focus Child: 
+bindsym $mod+g focus child
+
+
+# -- WORKSPACES --
+
+
+# Workspace Labels:
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Switch Workspace:
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# Move Container To Workspace: 
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+
+# -- I3 --
+
+
+# Reload Config File:
+bindsym $mod+Shift+c reload
+
+# Reload i3:
+bindsym $mod+Shift+r restart
+
+# Exit i3:
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Run away...' 'i3-msg exit'"
+
+
+# -- RESIZE --
+
+
+# Resize Window: 
+mode "resize" {
+       
+	# Shrink/Grow:
+ 
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym Left resize shrink width 10 px or 10 ppt
+	
+	bindsym j resize grow height 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+	
+	bindsym k resize shrink height 10 px or 10 ppt
+    bindsym Up resize shrink height 9 px or 10 ppt
+	
+	bindsym l resize grow width 10 px or 10 ppt
+	bindsym Right resize grow width 10 px or 10 ppt
+
+    # Toggle Resize Off:
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
+
+}
+
+bindsym $mod+r mode "resize"
+
+
+# -- OTHER --
+
+
+# Capture Screenshot:
+bindsym $mod+Shift+s exec "~/.config/i3/SnippingTool.sh"
+
+# Removing Title Bars:
+font pango:Monospace 0
+for_window [class="^.*"] title_format ""
+
+# Removing Borders:
+# for_window [class="^.*"] border none 
+# default_border none
+# default_floating_border none
+# hide_edge_borders both
+
+# Setting Borders:
+default_border pixel 5
+default_floating_border pixel 5
+
+# Blacken Decorations:
+client.focused          #000000 #000000 #FFFFFF #000000 #000000
+client.focused_inactive #000000 #000000 #FFFFFF #000000 #000000
+client.unfocused        #000000 #000000 #FFFFFF #000000 #000000
+client.urgent           #000000 #000000 #FFFFFF #000000 #000000
+client.placeholder      #000000 #000000 #FFFFFF #000000 #000000
+client.background       #000000
+
+# Disable Focus Follow:
+focus_follows_mouse no
+
+# Ignore Fullscreen Popup:
+popup_during_fullscreen ignore
+
+# Window Gaps:
+gaps inner 4
+gaps outer 3
+
+# Set Wallpaper:
+# exec "feh --bg-fill ~/Pictures/Wallpapers/Lost.jpg"
+
+# Set Animated Wallpaper:
+exec "~/.config/i3/animated-wallpaper-feh.sh"
+
+# Start Visualizer:
+exec "i3bgwin urxvt -depth 32 -bg '[00]black' --color6 '[50]cyan' +sb -embed {windowid} -e cava -p ~/.config/cava/config"
+
+# -- STARTUP --
+
+# Spotifyd:
+exec --no-startup-id "spotifyd"
+
+# Picom:
+exec --no-startup-id "picom"
+
+# XFCE Panel:
+exec --no-startup-id "xfce4-panel"
+
+# Firefox:
+exec --no-startup-id "firefox"

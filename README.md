@@ -4,6 +4,14 @@
 # ☥ PREVIEW:
 <details>
   <summary><strong>Images</strong></summary>
+  <h3> LOGIN: </h3>
+  <img src="preview/LOGIN.png">
+  <h3> LAUNCHER: </h3>
+  <img src="preview/LAUNCHER.png">
+  <h3> WM: </h3>
+  <img src="preview/WM.png">
+  <h3> EDITOR: </h3>
+  <img src="preview/EDITOR.png">
 </details>
 
 # ☥ STUFF:
@@ -26,7 +34,7 @@ sudo pacman -S cava dunst feh firefox i3 kitty mpv neofetch neovim p7zip picom n
 # ☥ GIT:
 **<li>i3bgwin: <a href="https://github.com/quantum5/i3bgwin">https://github.com/quantum5/i3bgwin</a></li>**
 **<li>spotify-tui: <a href="https://github.com/Rigellute/spotify-tui">https://github.com/Rigellute/spotify-tui</a></li>**
-**<li>vesktop: <a href="https://github.com/Vencord/Vesktop">https://github.com/Vencord/Vesktop</a></li>**
+**<li>Vesktop: <a href="https://github.com/Vencord/Vesktop">https://github.com/Vencord/Vesktop</a></li>**
 
 # ☥ INFO:
 > **The wallpaper is a GIF, dissected into frames, and ran on a loop using a script.** <br>

@@ -1,0 +1,21 @@
+set $wallpaper /home/azryatic/Pictures/Wallpapers/Persona5.jpeg
+
+set $background #000000
+set $foreground #e3e0e0
+
+set $color0 #000000
+set $color1 #ED1E24
+set $color2 #C53539
+set $color3 #887F81
+set $color4 #8C8C8F
+set $color5 #ABACAD
+set $color6 #EEA4A6
+set $color7 #e3e0e0
+set $color8 #9e9c9c
+set $color9 #ED1E24
+set $color10 #C53539
+set $color11 #887F81
+set $color12 #8C8C8F
+set $color13 #ABACAD
+set $color14 #EEA4A6
+set $color15 #e3e0e0
